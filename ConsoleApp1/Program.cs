@@ -10,13 +10,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int x = 0;
-            int y = 0;
             Console.WriteLine("ENTER X AND Y");
-            x = int.Parse(Console.ReadLine());
-            y = int.Parse(Console.ReadLine());
-            int p = x * y;
-            Console.WriteLine(p);
+            int x = int.Parse(Console.ReadLine());
+            int y = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine(MathOperations.Multiply(x, y));
             Console.ReadKey();
         }
     }
